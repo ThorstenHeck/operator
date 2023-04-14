@@ -1,0 +1,9 @@
+---
+roles:
+  - name: geerlingguy.node_exporter
+
+collections:
+- devsec.hardening
+- community.postgresql
+- community.crypto
+- community.general
