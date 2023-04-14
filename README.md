@@ -1,6 +1,6 @@
-# Ansible-operator Docker Container
+# Operator Docker Container
 
-This project aims to enable KraB project member to run ansible against our infrastructure in a standarized way.  
+This project aims to enable KraB project member to run ansible, packer and terraform against our infrastructure in a standarized way.  
 Its intended as a quick helper, not to exemplify a structure.
 
 ## Installation
@@ -8,11 +8,11 @@ Its intended as a quick helper, not to exemplify a structure.
 
 ```
 git clone https://abc && cd abc
-docker build .
+docker build  -t operator .
 ```
 
 
-### Network Helper
+### Network Helper Ansible
 
 To overcome network issues, I added an example inventory file that shows how to run ansible via a ssh jump host.  
 

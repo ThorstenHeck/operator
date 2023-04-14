@@ -1,0 +1,9 @@
+[bastion]
+tool.3ascloud.de ansible_host=10.252.24.35
+
+[nodes]
+private-server-1.example.com ansible_host=10.252.24.35
+private-server-2.example.com ansible_host=10.252.24.35
+
+[nodes:vars]
+ansible_ssh_common_args='-o ProxyCommand="ssh -p 22 -W %h:%p -q root@10.252.24.35"'
